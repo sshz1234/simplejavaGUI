@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.comp1011week1lab.CreateMyCartypeView">
+   <children>
+      <VBox layoutX="84.0" layoutY="15.0" prefHeight="360.0" prefWidth="400.0">
+         <children>
+            <Label text="Register your car type!">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+
+                  <TextField fx:id="txtMake" GridPane.columnIndex="1" />
+                  <TextField fx:id="txtvehicle_type" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="txtlicnese_number" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                   <Label text="make" />
+                   <Label text="vehicle type" GridPane.rowIndex="1" />
+                   <Label text="license number" GridPane.rowIndex="2" />
+                  <ComboBox fx:id="cmbvehicle_type" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+               </children>
+            </GridPane>
+            <Label fx:id="lblRegister" text="Label" />
+            <Button fx:id="btnRegister" mnemonicParsing="false" onAction="#CreateNewCartype" text="register your car!" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
